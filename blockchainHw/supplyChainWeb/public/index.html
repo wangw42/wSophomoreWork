@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Supply Chain based on FISCO-BCOS</title>
+
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
+	<script herf="./main.js"></script>
+
+</head>
+<body>
+	<div id="header">
+          <header >Supply Chain based on FISCO-BCOS</header>
+	</div>
+	
+
+      <div id="content">
+          <h2>Smart Contract: SupplyChain</b></h2>
+
+          <div id="newCompany" class="disable" >
+               <span> <strong>创建公司</strong></span>
+               <hr>
+          	<form method="post" action="/newCompany">
+          		Company Name: <input type="text" name="companyName" id="companyName"> </input>
+          		<br>
+          		Company Type: <input type="text" name="companyType" id="companyType"> </input>
+
+          		<br>
+          		<input onclick="addContent()" type="submit" id="newCompanyButton" name="Submit" value="Submit"> 
+
+                    <hr>
+               <!--
+                    已创建的公司：
+                    <div id="displayNewCompany" >
+                         
+                    </div>
+               -->
+
+          	</form>
+          </div>
+
+          <div id="trade" class="disable">
+               <span> <strong>发起交易</strong></span>
+               <hr>
+               <form method="post" action="/trade">
+          		Company From: <input type="text" name="tradecompanyFrom" > </input>
+          		<br>
+                    Company To: <input type="text" name="tradecompanyTo" > </input>
+                    <br>
+          		Product Name: <input type="text" name="tradeproductName"> </input>
+          		<br>
+          		Amount: <input type="text" name="tradeAmount" > </input>
+          		<br>
+
+                    <input type="submit" id="submitButton" name="Submit" value="Submit"> 
+
+                    <hr>
+               <!--
+                    已完成的交易：
+                    <div>
+                         
+                    </div>
+               -->
+          	</form>
+          </div>
+
+          <div id="bank" class="disable">
+               <span> <strong>银行贷款</strong></span>
+               <hr>
+               <form method="post" action="/bank">
+                    Company Name: <input type="text" name="bankcompanyName" > </input>
+                    <br>
+          		Bank Name: <input type="text" name="bankName" > </input>
+          		<br>
+          		Product Name: <input type="text" name="bankproductName" > </input>
+          		<br>
+          		Amount: <input type="text" name="bankAmount" id="Amount"> </input>
+          		<br>
+
+                    <input type="submit" id="submitButton" name="Submit" value="Submit"> 
+
+                    <hr>
+               <!--
+                    已完成的贷款：
+                    <div>
+                         
+                    </div>
+               -->
+
+          	</form>
+          </div>
+
+          <div id="query" class="disable">
+               <span> <strong>查询账单</strong></span>
+               <hr>
+               <form method="post" action="/receipt">
+          		Company Name1: <input type="text" name="receiptcompanyName1" > </input>
+          		<br>
+          		Company Name2: <input type="text" name="receiptproductName2" > </input>
+          		<br>
+          		Product Name: <input type="text" name="receiptproductName" > </input>
+          		<br>
+
+                    <input type="submit" id="submitButton" name="Submit" value="Submit"> 
+
+                    <hr>
+               <!--
+                    查询结果：
+                    <div>
+                         
+                    </div>
+               -->
+          	</form>
+          </div>
+
+      </div>
+      
+
+
+    </div>
+
+
+</body>
+
+<script type="text/javascript">
+     
+     function addContent(){
+          /*
+          $.ajax({
+               url: 'http://localhost:8080/newCompany',
+               type: 'post',
+               error: (err) => {
+                    alert("Error!");
+                    console.log(err);
+               },
+               success: function(data) {
+                    var data = $.parseJSON(data);  
+                    console.log(data);
+                    var p = document.createElement("p");
+                    p.innerText = data;
+                    console.log(data + "----");
+                    var div = document.getElementById('displayNewCompany');
+                    div.appendChild(p);
+               }
+          });
+          */
+
+}
+
+/*
+          $.get('http://localhost:8080/newCompany', (data)=>{
+               console.log(data);
+
+               var p = document.createElement("p");
+               p.innerText = data;
+               console.log(data + "----");
+               var div = document.getElementById('displayNewCompany');
+               div.appendChild(p);
+          })
+     */
+
+ </script>
+</html>
