@@ -1,0 +1,16 @@
+info|2019-12-11 15:31:47.007070|[P2P][Service] heartBeat,connected count=3
+warning|2019-12-11 15:31:47.009505|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=29694,toV=29695,curNum=5,hash=a9fec021...,nodeIdx=1,myNode=2dce86f9...
+info|2019-12-11 15:31:47.009816|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=29694,toView=29695,nodeIdx=1,changeCycle=1,myNode=2dce86f9...,timecost=0.658
+info|2019-12-11 15:31:47.013104|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=29694,org_changeCycle=1,cur_changeCycle=1,to_view=29695
+info|2019-12-11 15:31:48.014461|[g:1][CONSENSUS]addRawPrepare,height=6,reqIdx=0,hash=cb3fbfc3...
+info|2019-12-11 15:31:48.015151|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=29695,toView=29696,nodeIdx=1,changeCycle=0,myNode=2dce86f9...,timecost=0.525
+info|2019-12-11 15:31:48.015898|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=29695,org_changeCycle=0,cur_changeCycle=0,to_view=29696
+info|2019-12-11 15:31:49.015276|[g:1][CONSENSUS][SEALER]++++++++++++++++ Generating seal on,blkNum=6,tx=0,nodeIdx=1,hash=cf06715e...
+info|2019-12-11 15:31:49.019614|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=29696,toView=29697,nodeIdx=1,changeCycle=0,myNode=2dce86f9...,timecost=0.647
+info|2019-12-11 15:31:49.020568|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=29696,org_changeCycle=0,cur_changeCycle=0,to_view=29697
+info|2019-12-11 15:31:50.020673|[g:1][CONSENSUS]addRawPrepare,height=6,reqIdx=2,hash=0c643851...
+info|2019-12-11 15:31:50.021337|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=29697,toView=29698,nodeIdx=1,changeCycle=0,myNode=2dce86f9...,timecost=0.514
+info|2019-12-11 15:31:50.023012|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=29697,org_changeCycle=0,cur_changeCycle=0,to_view=29698
+info|2019-12-11 15:31:51.024365|[g:1][CONSENSUS]addRawPrepare,height=6,reqIdx=3,hash=bfb1408f...
+info|2019-12-11 15:31:51.024812|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=29698,toView=29699,nodeIdx=1,changeCycle=0,myNode=2dce86f9...,timecost=0.352
+info|2019-12-11 15:31:51.025787|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=29698,org_changeCycle=0,cur_changeCycle=0,to_view=29699

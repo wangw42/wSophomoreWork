@@ -1,0 +1,13 @@
+warning|2019-11-14 19:10:07.008588|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=120462,toV=120463,curNum=0,hash=f72cae63...,nodeIdx=2,myNode=72961a87...
+info|2019-11-14 19:10:07.012950|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=120462,toView=120463,nodeIdx=2,changeCycle=1,myNode=72961a87...,timecost=10.895
+info|2019-11-14 19:10:07.013069|[P2P][Service] heartBeat,connected count=3
+info|2019-11-14 19:10:07.016050|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=120462,org_changeCycle=1,cur_changeCycle=1,to_view=120463
+info|2019-11-14 19:10:08.021141|[g:1][CONSENSUS]addRawPrepare,height=1,reqIdx=3,hash=5885c58f...
+info|2019-11-14 19:10:08.021855|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=120463,toView=120464,nodeIdx=2,changeCycle=0,myNode=72961a87...,timecost=0.475
+info|2019-11-14 19:10:08.023500|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=120463,org_changeCycle=0,cur_changeCycle=0,to_view=120464
+info|2019-11-14 19:10:09.024706|[g:1][CONSENSUS]addRawPrepare,height=1,reqIdx=0,hash=b9e3e516...
+info|2019-11-14 19:10:09.025305|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=120464,toView=120465,nodeIdx=2,changeCycle=0,myNode=72961a87...,timecost=0.473
+info|2019-11-14 19:10:09.027144|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=120464,org_changeCycle=0,cur_changeCycle=0,to_view=120465
+info|2019-11-14 19:10:10.029391|[g:1][CONSENSUS]addRawPrepare,height=1,reqIdx=1,hash=e2b072be...
+info|2019-11-14 19:10:10.029851|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=120465,toView=120466,nodeIdx=2,changeCycle=0,myNode=72961a87...,timecost=0.354
+info|2019-11-14 19:10:10.030954|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=120465,org_changeCycle=0,cur_changeCycle=0,to_view=120466
